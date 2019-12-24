@@ -1,5 +1,5 @@
 @echo off
-pushd ..
+pushd ..\..\
 
 title Building pyTivo Desktop - Deleting build directory
 echo Deleting build directory

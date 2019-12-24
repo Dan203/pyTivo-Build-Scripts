@@ -1,7 +1,7 @@
 @echo off
 TITLE Building pyTivo Desktop
 
-pushd ..
+pushd ..\..\
 set /p oldversion=< version.info
 popd
 
@@ -55,8 +55,16 @@ call electron
 call :check_for_error
 
 echo.
+call sign_exes
+call :check_for_error
+
+echo.
 call installer
 call :check_for_error
+
+Rem echo.
+Rem call sign_installer
+Rem call :check_for_error
 
 :exit
 exit /B %errorlevel%

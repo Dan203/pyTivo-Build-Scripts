@@ -1,5 +1,5 @@
 @echo off
-pushd "../pytivo/pyinstaller"
+pushd "..\..\pytivo\pyinstaller"
 
 title Building pyTivo Desktop - Building pyTivoTray
 echo Building pyTivoTray

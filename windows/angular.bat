@@ -1,5 +1,5 @@
 @echo off
-pushd "../desktop"
+pushd "..\..\desktop"
 
 title Building pyTivo Desktop - Building angular code
 echo Building angular code

@@ -1,5 +1,5 @@
 @echo off
-pushd ..
+pushd ..\..\
 
 set oldversion=%1
 set newversion=%2

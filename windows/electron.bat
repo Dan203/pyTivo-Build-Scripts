@@ -3,12 +3,12 @@
 title Building pyTivo Desktop - Building electron exe
 echo Building electron exe
 
-pushd "../build"
+pushd "..\..\build"
 
 rmdir "desktop" /s /q
 
 popd
-pushd "../desktop"
+pushd "..\..\desktop"
 
 xcopy /Y "electron\*.*" "dist"
 if %errorlevel% NEQ 0 exit /B %errorlevel%
@@ -17,7 +17,7 @@ call electron-packager ./dist --icon=icon.ico --out="..\build" --platform=win32 
 if %errorlevel% NEQ 0 exit /B %errorlevel%
 
 popd
-pushd "../build"
+pushd "..\..\build"
 
 move "pyTivoDesktop-win32-ia32" "desktop"
 if %errorlevel% NEQ 0 exit /B %errorlevel%

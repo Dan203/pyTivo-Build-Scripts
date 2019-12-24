@@ -1,5 +1,5 @@
 @echo off
-pushd ..
+pushd ..\..\
 
 title Building pyTivo Desktop - Copying binary files
 echo Copying binary files
